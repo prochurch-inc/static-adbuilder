@@ -1,0 +1,33 @@
+.main {
+  @apply h-screen flex flex-col items-center justify-center bg-gray-300;
+}
+
+.main a {
+  @apply text-blue-500 no-underline;
+}
+
+.main a:hover {
+  @apply text-blue-700;
+}
+
+.copy-gradient {
+	background: linear-gradient(190deg, #ff9d3b 0%, #ff5725 70%);
+}
+
+.stripeForm input[type=radio] + label img.selected {
+  @apply hidden;
+}
+
+.stripeForm input[type=radio]:checked + label {
+	@apply border-2 border-orange-500;
+}
+
+.stripeForm input[type=radio]:checked+label img.selected {
+  @apply block;
+}
+
+.stripeForm input[type=radio]:checked+label img.non-selected {
+  @apply hidden;
+}
+
+
